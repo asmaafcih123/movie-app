@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:paddingTop="2dp"
+        android:layout_height="2dip"
+        android:background="#262626" />
+    <TableRow
+        android:background="#262626">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="authorxxxxxxddddddddddxxxxxxxxx name"
+            android:id="@+id/authorname"
+            android:textSize="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp"
+            android:textColor="#ffffff"
+            android:background="#262626"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:background="#262626"
+            android:gravity="right"
+         android:paddingLeft="90dp"
+            android:paddingTop="5dp"
+            android:id="@+id/readmore"
+            android:layout_weight="1"
+            android:paddingRight="8dp"
+            android:textAlignment="center"
+            android:text="Read More"
+            android:textColor="#0000FF"
+
+            />
+
+    </TableRow>
+    <View
+        android:paddingTop="2dp"
+        android:layout_height="2dip"
+        android:background="#262626" />
+
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="content"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:background="#262626"
+        android:textColor="#ffffff"
+        android:id="@+id/content"
+        android:layout_gravity="left"
+        android:layout_span="3"
+        android:layout_weight="1"
+        />
+    </TableRow>
+    <View
+        android:paddingTop="2dp"
+        android:layout_height="2dip"
+        android:background="#262626" />
+
+</TableLayout>

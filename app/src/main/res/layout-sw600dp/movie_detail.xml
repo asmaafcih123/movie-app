@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#262626">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#262626"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        >
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#696969">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/movie_icon"
+                    android:layout_gravity="center_horizontal|bottom" />
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    >
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/shareIcon"
+                        android:elevation="18dp"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fabSize="mini"
+                        android:src="@drawable/shareicon"
+                        app:layout_anchor="@id/fab"
+
+                        />
+
+                    <android.support.design.widget.FloatingActionButton
+
+                        android:id="@+id/fab"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/favorite_add"
+                        android:layout_marginBottom="50dp"
+                        app:fabSize="mini"
+                        app:layout_anchor="@+id/movie_detail_container"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_height="2dip"
+                android:background="#696969" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:background="#262626"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/table"
+            >
+
+
+            <TextView
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text=" Details"
+                android:layout_gravity="left"
+                android:layout_span="2"
+                android:textColor="#1E90FF"
+                />
+
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#696969" />
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            >
+            <TextView
+                android:textColor="#87CEFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textSize="19dp"
+                android:text="set titel"
+                android:scaleType="fitStart"
+                android:id="@+id/orignalTitle"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                />
+        </TableRow>
+
+        <View
+            android:paddingTop="5dp"
+            android:layout_height="2dip"
+            android:background="#262626" />
+        <TableRow>
+            <TextView
+                android:textColor="#87CEFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:text="set titel"
+                android:scaleType="fitStart"
+                android:id="@+id/date"
+                android:gravity="left"
+                android:textSize="19dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#262626" />
+        <TableRow>
+            <TextView
+                android:textColor="#87CEFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote"
+                android:textSize="20dp"
+                android:id="@+id/vote"
+                />
+
+            <RatingBar
+                android:paddingRight="8dp"
+                android:id="@+id/MyRating"
+                android:layout_gravity="left"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="2"
+                />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#262626" />
+
+        <TableRow>
+            <TextView
+                android:textColor="#87CEFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:id="@+id/overview"
+                android:textSize="17dp"
+                />
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <TextView
+
+                    android:scaleType="fitStart"
+                    android:text="  texte"
+                    android:gravity="left|top"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/suboverview"
+                    android:paddingBottom="10dp"
+                    />
+            </ScrollView>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#696969" />
+
+
+        <TableRow>
+
+            <TextView
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text=" Trailers"
+                android:layout_gravity="left"
+                android:layout_span="2"
+                android:textColor="#1E90FF"
+                />
+            />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#696969" />
+
+        <TableRow>
+            <ListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/triler_list"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/trialtv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:horizontalSpacing="10dp"
+                android:layout_weight="3"
+                android:layout_span="4"
+                />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#696969" />
+
+        <TableRow>
+            <TextView
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text=" Reviews"
+                android:layout_gravity="left"
+                android:layout_span="2"
+                android:textColor="#1E90FF"
+                />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#696969" />
+
+        <TableRow>
+            <ListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/review_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="90dp"
+                android:gravity="bottom"
+                android:layout_below="@+id/reviewtv"
+                android:horizontalSpacing="10dp"
+                android:layout_weight="3"
+                android:layout_span="4"
+                />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

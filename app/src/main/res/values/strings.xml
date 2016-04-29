@@ -1,0 +1,9 @@
+<resources>
+        <string name="app_name">Top Movies</string>
+        <string name="title_movie_detail">Top Movies</string>
+        <string name="action_popular">Popular</string>
+        <string name="action_rate">Rate</string>
+        <string name="action_favorite">Favorite</string>
+        <string name="action_logout">log out</string>
+
+</resources>
